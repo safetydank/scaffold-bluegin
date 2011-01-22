@@ -6,9 +6,6 @@
 
 class PlayState : public flx::State
 {
-private:
-    flx::TextPtr t1;
-
 public:
     virtual void create();
     virtual void update();
