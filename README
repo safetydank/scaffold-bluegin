@@ -3,3 +3,22 @@ scaffold-bluegin
 This is a minimal starting setup for Bluegin.  Clone this repository and start
 modifying it to bootstrap new projects.
 
+Customizing the app name
+========================
+
+Rename the folders under src/ to reflect your organization.
+
+Make the following changes:
+
+Path                           Change
+------------------------       -------------------------------------------
+src/.../ScaffoldActivity       Activity name and native library name 
+                               (referenced in jni/Android.mk)
+
+AndroidManifest.xml            "package" attribute of <manifest>
+                               "android:name" attribute of <activity>
+
+jni/Android.mk                 Set LOCAL_MODULE to the native library name
+
+res/values/strings.xml         String "app_name"
+
